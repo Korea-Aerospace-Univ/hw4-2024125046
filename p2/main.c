@@ -13,12 +13,14 @@ int main() {
         if (ch >= 'a' && ch <= 'z') {
             eng++;
             num = 0;
-            if (eng > maxEng) maxEng = eng;
+            if (eng > maxEng) 
+                maxEng = eng;
         } 
         else if (ch >= '0' && ch <= '9') {
             num++;         
             eng = 0;
-            if (num > maxNum) maxNum = num;
+            if (num > maxNum) 
+                maxNum = num;
         } 
         else {
             eng = 0;
