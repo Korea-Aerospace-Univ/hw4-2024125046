@@ -7,11 +7,11 @@ int main() {
     do {
         count ++;
         scanf("%d", &a);
-    if (a < answer){
-            printf("%d<?\n", a);
-    } else { 
-        printf("%d>?\n", a);
-    }
+        if (a < answer){
+                printf("%d<?\n", a);
+        } else { 
+            printf("%d>?\n", a);
+        }
     } while(a!=answer);
 
     printf("%d", count);
