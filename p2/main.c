@@ -2,7 +2,7 @@
 
 int main() {
     int N; // 입력될 문자의 개수를 저장하는 변수
-    int eng = 0, num = 0; 얼마나 연속된는지 세는 소문자와 숫자 변수
+    int eng = 0, num = 0; //얼마나 연속된는지 세는 소문자와 숫자 변수
     int maxEng = 0, maxNum = 0; //연속된 소문자와 숫자 중 최대 연속을 저장하는 변수
     char ch; //한 글자씩 입력받는 변수
     scanf("%d", &N); //N을 입력받음
@@ -27,7 +27,7 @@ int main() {
     }
 
     printf("%d\n", maxEng); //소문자 최대 카운트 출력
-    printf("%d\n", maxNum); /숫자 최대 카운트 출력
+    printf("%d\n", maxNum); //숫자 최대 카운트 출력
 
     return 0; //정상 종료
 }
