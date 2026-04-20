@@ -2,18 +2,21 @@
 
 int main() {
     int answer, a, count = 0;
-    scanf("%d", &answer);
+    if (scanf("%d", &answer) != 1) return 0;
     do {
-        count ++;
-        scanf("%d", &a);
-        if (a < answer){
+        count++;
+        if (scanf("%d", &a) != 1) break;
+
+        if (a < answer) {
             printf("%d<?\n", a);
-        } else { 
+        } else if (a > answer) {
             printf("%d>?\n", a);
+        } else {
+            printf("%d==?\n", a);
         }
-    } while(a!=answer);
-    printf("%d", count);
+        
+    } while (a != answer);
+    printf("%d\n", count);
         
     return 0;
 }
-
