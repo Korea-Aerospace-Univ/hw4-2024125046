@@ -4,12 +4,10 @@ int main() {
     int N;
     int eng = 0, num = 0;
     int maxEng = 0, maxNum = 0;
-    char a[100];
+    char ch;
     scanf("%d", &N);
-    scanf("%s", a);
-
     for (int i = 0; i < N; i++) {
-        char ch = a[i];
+        scanf(" %c", &ch); 
         if (ch >= 'a' && ch <= 'z') {
             eng++;
             num = 0;
@@ -27,8 +25,12 @@ int main() {
             num = 0;
         }
     }
+
     printf("%d\n", maxEng);
     printf("%d\n", maxNum);
 
     return 0;
 }
+
+
+
